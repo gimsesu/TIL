@@ -22,7 +22,7 @@ type point struct {
 	z string
 }
 
-fmt.Printf("%v\n", p)
+fmt.Printf("%v", p)
 	// {1 3.1 Hello}
 
 ```
@@ -32,7 +32,7 @@ fmt.Printf("%v\n", p)
 ```go
 // 구조체 출력 시 필드 이름을 같이 출력한다.
 
-fmt.Printf("%+v\n", p)
+fmt.Printf("%+v", p)
 // {x:1 y:3.1 z:Hello}
 ```
 
@@ -41,7 +41,7 @@ fmt.Printf("%+v\n", p)
 ```go
 // 값을 다루는 Go문법을 출력한다.
 
-fmt.Printf("%#v\n", p)
+fmt.Printf("%#v", p)
 // main.point{x:1, y:3.1, z:"Hello"}
 ```
 
@@ -50,7 +50,7 @@ fmt.Printf("%#v\n", p)
 ```go
 // 값 타입을 다루는 Go문법을 출력한다.
 
-fmt.Printf("%T\n", p.x)
+fmt.Printf("%T", p.x)
 // int
 ```
 
@@ -59,7 +59,7 @@ fmt.Printf("%T\n", p.x)
 ```go
 // '%'을 출력한다
 
-fmt.Printf("%%\n")
+fmt.Printf("%%")
 // %
 ```
 
@@ -73,7 +73,7 @@ fmt.Printf("%%\n")
 // 불리언 값을 출력한다.
 
 var imGenius bool
-fmt.Printf("%t\n", imGenius)
+fmt.Printf("%t", imGenius)
 // false
 ```
 
@@ -86,7 +86,7 @@ fmt.Printf("%t\n", imGenius)
 ```go
 // 2진수(binary)를 출력한다.
 
-fmt.Printf("%b\n", 10)
+fmt.Printf("%b", 10)
 // 1010
 ```
 
@@ -97,7 +97,7 @@ fmt.Printf("%b\n", 10)
 ```go
 // 해당 정수(10진수, 8진수)가 가리키는 유니코드 문자를 출력한다.
 
-fmt.Printf("%c = %c\n", 65, 0101)
+fmt.Printf("%c = %c", 65, 0101)
 // A = A
 ```
 
@@ -108,7 +108,7 @@ fmt.Printf("%c = %c\n", 65, 0101)
 ```go
 // 10진수(decimal)를 출력한다.
 
-fmt.Printf("%d\n", p.x)
+fmt.Printf("%d", p.x)
 // 1
 ```
 
@@ -119,7 +119,7 @@ fmt.Printf("%d\n", p.x)
 ```go
 // 8진수(octal)를 출력한다.
 
-fmt.Printf("%o\n", 23)
+fmt.Printf("%o", 23)
 // 27
 ```
 
@@ -130,7 +130,7 @@ fmt.Printf("%o\n", 23)
 ```go
 // 8진수 출력. 맨앞에 '0o'(숫자 0, 소문자 o)가 온다.
 
-fmt.Printf("%O\n", 23)
+fmt.Printf("%O", 23)
 // 0o27
 ```
 
@@ -141,7 +141,7 @@ fmt.Printf("%O\n", 23)
 ```go
 // 이스케이프 문자를 작은따옴표(' ')로 감싸서 출력한다.
 
-fmt.Printf("%q\n", 2)
+fmt.Printf("%q", 2)
 // '\x02'
 ```
 
@@ -152,7 +152,7 @@ fmt.Printf("%q\n", 2)
 ```go
 // 16진수(hexadecimal)를 출력한다. 알파벳은 소문자
 
-fmt.Printf("%x\n", 231)
+fmt.Printf("%x", 231)
 // e7
 ```
 
@@ -163,7 +163,7 @@ fmt.Printf("%x\n", 231)
 ```go
 // 16진수 출력. 알파벳은 대문자
 
-fmt.Printf("%X\n", 231)
+fmt.Printf("%X", 231)
 // E7
 ```
 
@@ -174,11 +174,11 @@ fmt.Printf("%X\n", 231)
 #### %b
 
 ```go
-//  : strconv.FormatFloat 함수의 방식을 따라, 지수가 2의 거듭제곱인 십진수가 없는 과학적 표기법으로 출력한다.
+// strconv.FormatFloat 함수의 방식을 따라, 지수가 2의 거듭제곱인 십진수가 없는 과학적 표기법으로 출력한다.
 
 var f float64 = 1073741824.1 // 1073741824 = 2^30
 
-fmt.Printf("%b\n", f)
+fmt.Printf("%b", f)
 // 4503599627789926p-22
 ```
 
@@ -189,10 +189,10 @@ fmt.Printf("%b\n", f)
 ```go
 // 과학적 표기법으로 출력한다.
 
-fmt.Printf("%e\n", f)
+fmt.Printf("%e", f)
 // 1.073742e+09
 
-fmt.Printf("%E\n", f)
+fmt.Printf("%E", f)
 // 1.073742E+09
 ```
 
@@ -203,10 +203,10 @@ fmt.Printf("%E\n", f)
 ```go
 // 지수가 없는 소수점을 출력한다.
 
-fmt.Printf("%f\n", f)
+fmt.Printf("%f", f)
 // 1073741824.100000
 
-fmt.Printf("%F\n", f)
+fmt.Printf("%F", f)
 // 1073741824.100000
 ```
 
@@ -214,19 +214,19 @@ fmt.Printf("%F\n", f)
 
 ##### %g, %G
 
-```
+```go
 // 지수가 클 경우 %e 로, 그렇지 않으면 %f 로 출력한다.
 
-fmt.Printf("%g\n", f)
+fmt.Printf("%g", f)
 // 1.0737418241e+09
 
-fmt.Printf("%g\n", 164.1)
+fmt.Printf("%g", 164.1)
 // 164.1
 
-fmt.Printf("%G\n", f)
+fmt.Printf("%G", f)
 // 1.0737418241E+09
 
-fmt.Printf("%G\n", 164.1)
+fmt.Printf("%G", 164.1)
 // 164.1
 ```
 
@@ -237,7 +237,7 @@ fmt.Printf("%G\n", 164.1)
 ```go
 // 16진수를 출력(두 지수의 10진수)
 
-fmt.Printf("%x\n", f)
+fmt.Printf("%x", f)
 // 0x1.0000000066666p+30
 ```
 
@@ -248,7 +248,7 @@ fmt.Printf("%x\n", f)
 ```go
 // 16진수 출력. 알파벳은 대문자
 
-fmt.Printf("%X\n", f)
+fmt.Printf("%X", f)
 // 0X1.0000000066666P+30
 ```
 
@@ -262,13 +262,12 @@ fmt.Printf("%X\n", f)
 // 문자열 또는 슬라이스의 해석되지 않은 바이트를 출력한다.
 
 var soon string = "soon"
-
-fmt.Printf("%s\n", soon)
-// soon
-
 bSoon := []byte(soon)
 
-fmt.Printf("%s\n", bSoon)
+fmt.Printf("%s", soon)
+// soon
+
+fmt.Printf("%s", bSoon)
 // soon
 
 fmt.Println(bSoon)
@@ -280,7 +279,7 @@ fmt.Println(bSoon)
 ```go
 // 문자열을 큰따옴표(" ")로 감싸서 출력한다.
 
-fmt.Printf("%q\n", "soon")
+fmt.Printf("%q", "soon")
 // "soon"
 ```
 
@@ -289,7 +288,7 @@ fmt.Printf("%q\n", "soon")
 ```go
 // 16진수를 출력한다. 알파벳은 소문자. 바이트 당 2자
 
-fmt.Printf("%x\n", "Hello World")
+fmt.Printf("%x", "Hello World")
 // 48656c6c6f20576f726c64
 ```
 
@@ -298,7 +297,7 @@ fmt.Printf("%x\n", "Hello World")
 ```go
 // 16진수를 출력한다. 알파벳은 대문자. 바이트 당 2자
 
-fmt.Printf("%X\n", "Hello World")
+fmt.Printf("%", "Hello World")
 // 48656C6C6F20576F726C64
 ```
 
@@ -312,20 +311,20 @@ fmt.Printf("%X\n", "Hello World")
 // 슬라이스 0번째 요소의 주소를 출력한다. 앞에 '0x'가 붙는다.
 
 var sl1 []string
-fmt.Printf("%p\n", sl1)
+fmt.Printf("%p", sl1)
 // 0x0
 
 sl2 := []string{}
-fmt.Printf("%p\n", sl2)
+fmt.Printf("%p", sl2)
 // 0x1396dc8
 
 sl1 = append(sl1, "smile")
 sl2 = append(sl2, "smile")
 
-fmt.Printf("%p, %p\n", sl1, sl2)
+fmt.Printf("%p, %p", sl1, sl2)
 // 0xc0001050b0, 0xc0001050c0
 
-fmt.Printf("%p\n", &sl1)
+fmt.Printf("%p", &sl1)
 // 0xc000004b40
 ```
 
@@ -340,7 +339,7 @@ fmt.Printf("%p\n", &sl1)
 // %b, %d, %o, %x 그리고 %X 또한 포인터 출력을 지원한다.
 
 sl3 := []int{23}
-	fmt.Printf("%b, %d, %o, %x, %X\n", &sl3, &sl3, &sl3, &sl3, &sl3)
+	fmt.Printf("%b, %d, %o, %x, %X", &sl3, &sl3, &sl3, &sl3, &sl3)
 	// &[10111], &[23], &[27], &[17], &[17]
 
 sl4 := []float64{1073741824.1}
