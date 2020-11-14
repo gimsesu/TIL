@@ -1,4 +1,4 @@
-# Math.min & Math.max - Maximum call stack size exceeded
+# Math.min(max) - Maximum call stack size exceeded
 
 ## 개요
 
