@@ -50,7 +50,7 @@ r.on("line", (line) => {
     }
 
     console.log(`Have a good day!`);
-    process.exit();
+    process.exit(0);
 });
 // 콘솔에 '방구' 입력 후 Enter 입력
 // 콘솔에 '향기' 입력 후 Enter 입력
