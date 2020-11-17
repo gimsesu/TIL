@@ -22,6 +22,9 @@ r.on("line", (input) => {
     console.log(`Received: ${input}`);
     r.close();
 });
+// 콘솔에 '방구' 입력 후 Enter 입력
+//
+// Received: 방구
 ```
 
 
@@ -49,6 +52,13 @@ r.on("line", (line) => {
     console.log(`Have a good day!`);
     process.exit();
 });
+// 콘솔에 '방구' 입력 후 Enter 입력
+// 콘솔에 '향기' 입력 후 Enter 입력
+// 콘솔에 'Ctrl+D' or 'Ctrl+C' 입력
+//
+// Received: 방구
+// Received: 향기
+// Have a good day!
 ```
 
 
@@ -99,6 +109,9 @@ r.on("line", (input) => {
 
     process.exit(0);
 });
+// 콘솔에 'Ctrl+D' or 'Ctrl+C' 입력
+//
+// Have a good day!
 ```
 
 
