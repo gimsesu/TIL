@@ -2,11 +2,11 @@
 
 ## 개요
 
-[Baekjoon Online Judge]: https://www.acmicpc.net/
+[Baekjoon]: https://www.acmicpc.net/
 
-에선 문제 입력을 받을 때, 직접 사용자가 입력을 수신할 수 있는 코드를 짜야 한다.
+ 에선 문제 입력을 받을 때, 직접 사용자가 입력을 수신할 수 있는 코드를 짜야 한다.
 
-입출력을 제어하는 모듈로 `fs`와 `readline`이 있다. 그 중 `readline`의 사용법을 알아보자.
+입출력을 제어하는 모듈로는 `fs`와 `readline`이 있다. 그 중 `readline`의 사용법을 알아보자.
 
 ## 예시
 
