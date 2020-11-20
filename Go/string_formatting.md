@@ -414,7 +414,7 @@ fmt.Println(&p, &sl5, &m)
 
 ---
 
-## 📜참조
+## 📜참고
 
 - [fmt - The Go Programming Language[Website]. (2020.11.13)](https://golang.org/pkg/fmt/)
 - [Go by Example: 문자열 포맷팅[Website]. (2020.11.13)](https://mingrammer.com/gobyexample/string-formatting/)
