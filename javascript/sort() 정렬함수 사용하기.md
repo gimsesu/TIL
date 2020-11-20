@@ -4,7 +4,7 @@
 
 자바스크립트에는 배열 객체를 정렬할 수 있는 `sort()` 함수가 내장돼 있다.
 
-`sort()`는 기본적으로 오름차순 정렬한다.
+`sort()`는 기본적으로 배열을 오름차순 정렬한다.
 
 ```javascript
 let strings = ['하나', '둘', '십일', '셋', '넷'];
@@ -144,3 +144,10 @@ mapped.sort((a, b) => {
     return +(a.value > b.value) || +(a.value === b.value) - 1;
 });
 ```
+
+
+
+## 참조
+
+- [Array.prototype.sort() - JavaScript | MDN[웹사이트]. (2020.11.20)](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
+
