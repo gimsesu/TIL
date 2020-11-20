@@ -33,10 +33,6 @@
 
 
 
----
-
-
-
 ## 📜참조
 
 - [[출처/인용] 웹페이지 인용/출처표기는 어떻게 해야 하나요? – 카피킬러에듀[Website]. (2020.1120)](http://edu.copykiller.com/edu-source/faq/?mod=document&uid=156)
