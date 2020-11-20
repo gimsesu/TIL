@@ -31,3 +31,4 @@
 
 - [[출처/인용] 웹페이지 인용/출처표기는 어떻게 해야 하나요? – 카피킬러에듀[Website]. (2020.1120)](http://edu.copykiller.com/edu-source/faq/?mod=document&uid=156)
 
+- [APA 양식 - 위키백과, 우리 모두의 백과사전[Website]. (2020.11.20)](https://ko.wikipedia.org/wiki/APA_%EC%96%91%EC%8B%9D)
