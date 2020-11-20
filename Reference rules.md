@@ -21,8 +21,8 @@
 
 
 
-> 문서 내 실제 표기
->
+#### 문서 내 실제 표기
+
 > e.g.  [APA 양식 - 위키백과, 우리 모두의 백과사전[Website]. (2020.11.20)](https://ko.wikipedia.org/wiki/APA_%EC%96%91%EC%8B%9D)
 
 
