@@ -124,6 +124,6 @@ r.on("line", (input) => {
 
 
 
-## 참조
+## 📜참조
 
 - [Readline | Node.js v15.2.1 Documentation[Website]. (2020.11.18)](https://nodejs.org/api/readline.html#readline_event_close)

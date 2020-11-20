@@ -406,19 +406,19 @@ fmt.Println(&p, &sl5, &m)
 
 ---
 
-### 결론
+## 결론
 
 소수점 표기 부분은 부족한 영어, 수학 실력으로 해석에 다수 오류가 있을 수도 있습니다.
 
-오류, 오타에 대해서는 두 팔 벌려 환영합니다.
+오류, 오타 환영합니다.
 
 ---
 
-### 참조
+## 📜참조
 
-- [Package fmt](https://golang.org/pkg/fmt/)
-- [Go by Example: 문자열 포맷팅](https://mingrammer.com/gobyexample/string-formatting/)
-- [과학적 표기법](https://ko.wikipedia.org/wiki/과학적_기수법)
-- [컴퓨터에서 소수점을 표현하는 방법, 지수 표기 방식에 대해서](https://m.blog.naver.com/PostView.nhn?blogId=yun4794&logNo=220989670770&proxyReferer=https:%2F%2Fwww.google.com%2F)
-- [소수점 정밀도](https://boycoding.tistory.com/152)
+- [fmt - The Go Programming Language[Website]. (2020.11.13)](https://golang.org/pkg/fmt/)
+- [Go by Example: 문자열 포맷팅[Website]. (2020.11.13)](https://mingrammer.com/gobyexample/string-formatting/)
+- [과학적 기수법 - 위키백과, 우리 모두의 백과사전[Website]. (2020.11.13)](https://ko.wikipedia.org/wiki/과학적_기수법)
+- [[컴퓨터 공학 계열] 컴퓨터에서 소수점을 표현하는 방법, 지수 표기  방식에 대해서 : 네이버 블로그[Website]. (2020.11.13)](https://m.blog.naver.com/PostView.nhn?blogId=yun4794&logNo=220989670770&proxyReferer=https:%2F%2Fwww.google.com%2F)
+- [소년코딩 - C++ 02.06 - 부동 소수점 숫자 (floating point numbers)[Website]. (2020.11.13)](https://boycoding.tistory.com/152)
 
