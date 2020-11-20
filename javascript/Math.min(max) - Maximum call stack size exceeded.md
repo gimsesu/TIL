@@ -77,7 +77,7 @@ console.log(min)
 
 
 
-## 참조
+## 📜참조
 
 - [javascript - Maximum call stack size exceeded with Math.min and Math.max - Stack Overflow[Website]. (2020.11.15)](https://stackoverflow.com/questions/42623071/maximum-call-stack-size-exceeded-with-math-min-and-math-max/52613386#52613386)
 
