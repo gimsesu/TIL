@@ -3,9 +3,10 @@
 # 📌참고 자료 표기 규칙
 
 - [APA Style](https://ko.wikipedia.org/wiki/APA_%EC%96%91%EC%8B%9D)을 약간 변형한 방식으로 한다.
-  - 기존 표기 규칙: `웹페이지명[Website]. (접속일자). URL:url`
+
+- 기존 표기 규칙
+  `웹페이지명[Website]. (접속일자). URL:url`
   - 하이퍼링크를 넣기 때문에 `URL:`항목은 따로 기술하지 않는다.
-  - 
 
 ## 웹사이트
 
