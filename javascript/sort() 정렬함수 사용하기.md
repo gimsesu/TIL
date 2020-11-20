@@ -149,5 +149,5 @@ mapped.sort((a, b) => {
 
 ## 참조
 
-- [Array.prototype.sort() - JavaScript | MDN[웹사이트]. (2020.11.20)](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
+- [Array.prototype.sort() - JavaScript[Website]. (2020.11.20)](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
 
