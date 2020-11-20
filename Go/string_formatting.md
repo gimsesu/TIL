@@ -10,7 +10,7 @@ fmt 패키지는 C 언어의 `printf` 및 `scanf`와 유사한 포맷팅 기능�
 ---
 
 - [일반](#일반)
-  - [%v](#v), </nbsp></nbsp> [%+v](#v-1),</nbsp></nbsp> [%#v](#v-2),</nbsp></nbsp> [%T](#t),</nbsp></nbsp> []()
+  - [%v](#v), &nbsp; &nbsp; [%+v](#v-1),</nbsp></nbsp> [%#v](#v-2),</nbsp></nbsp> [%T](#t),</nbsp></nbsp>[]()
 
 ## 형식
 
