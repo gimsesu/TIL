@@ -3,4 +3,4 @@
 
 ---
 
-- [참고 자료 표기 규칙](Reference rules.md)
+- [참고 자료 표기 규칙](./Reference rules.md)
