@@ -12,7 +12,7 @@
 
 ### 삼박자
 
-`sort.Sort()`는 인자는 정렬할 슬라이스를 타입으로 갖는 변수다. 해당 변수는 `Len()`, `Swap()`, `Less()` 세 가지의 [메소드](https://tour.golang.org/methods/1)를 구현해야 한다. `Go`에서 `메소드(Methods)`는 수신자를 갖는 함수를 말한다.
+`sort.Sort()`의 인자는 '정렬할 슬라이스를 타입으로 갖는 변수'다. 해당 변수는 `Len()`, `Swap()`, `Less()` 세 가지의 [메소드](https://tour.golang.org/methods/1)를 구현해야 한다. `Go`에서 `메소드(Methods)`는 수신자를 갖는 함수를 말한다.
 
 ```go
 type Interface interface {
