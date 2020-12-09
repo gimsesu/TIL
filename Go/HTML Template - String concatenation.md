@@ -19,7 +19,7 @@ Go의 `html/template` 패키지는 웹앱에서 서비스하는 `.html` 파일�
 ```go
 {{ $url := (print "https://www.google.com/search?q=" "www.google.com") }}
 <a href={{ $url }} target="_blank">
-// <a href= "https://www.google.com/search?q=www.google.com" target="_blank">
+// <a href="https://www.google.com/search?q=www.google.com" target="_blank">
 ```
 
 
