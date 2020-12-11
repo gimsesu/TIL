@@ -11,7 +11,7 @@
 
 Numpy 라이브러리에서 지원하는 파일 포맷 중 하나. 여러 개의 배열을 저장할 때 사용한다.
 
-한 개의 배열만 저장할 땐 `npy` 포맷을 사용한다.
+한 개의 배열만 저장할 땐 `.npy` 포맷을 사용한다.
 
 
 
@@ -22,7 +22,7 @@ Numpy 라이브러리에서 지원하는 파일 포맷 중 하나. 여러 개의
 여러 개의 배열을 압축하지 않은 1 개의 `.npz`파일로 저장한다.
 
 ```python
-numpy.savez('파일명', 저장할 배열)
+numpy.savez('파일명', <저장할 배열>)
 ```
 
 
@@ -79,20 +79,21 @@ import numpy as np
 
 b = np.load('./test_comp.npz')
 
-######### 객체 타입
+## 객체 타입
 print(type(b)) 
 # <class 'numpy.lib.npyio.NpzFile'>
 
+## 저장된 배열
 print(b.files)
 # ['X', 'Y']
 
-######### 배열의 길이
+## 배열의 길이
 print(len(b['X'])) 
 # 3
 print(len(b['Y']))
 # 7
 
-######### 배열 원소
+## 배열 원소
 print(b['X'])
 # [[ 0  1  2  3  4  5  6]
 #  [ 2  3  4  5  6  7  8]
@@ -100,13 +101,13 @@ print(b['X'])
 print(b['Y'])
 # [0 1 3 4 5 6 7]
 
-######### 원소의 총 개수
+## 원소의 총 개수
 print(b['X'].size)
 # 21
 print(b['Y'].size)
 # 7
 
-######### 배열 구조
+## 배열 구조
 print(b['X'].shape)
 # (3, 7)
 print(b['Y'].shape)
