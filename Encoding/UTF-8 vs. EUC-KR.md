@@ -52,34 +52,32 @@ func main() {
 	const kor = "안녕"
 	const eng = "Hi"
 
-   	/* UTF-8 인코딩 */
+	/* UTF-8 인코딩 */
 	fmt.Printf("[% x]\n", []byte(kor))
 	// [ec 95 88 eb 85 95]
 
 	fmt.Printf("[% x]\n", []byte(eng))
 	// [48 69]
 
-    /* 유니코드 코드 포인트 */
+	/* 유니코드 코드 포인트 */
 	for i, runeValue := range kor {
 		fmt.Printf("%#U starts at byte position %d\n", runeValue, i)
-		// U+C548 '안' starts at byte position 0
-		// U+B155 '녕' starts at byte position 3
 	}
+	// U+C548 '안' starts at byte position 0
+	// U+B155 '녕' starts at byte position 3
 
 	for i, runeValue := range eng {
 		fmt.Printf("%#U starts at byte position %d\n", runeValue, i)
-		// U+0048 'H' starts at byte position 0
-		// U+0069 'i' starts at byte position 1
 	}
-
-    /* EUC-KR 인코딩 */
+	// U+0048 'H' starts at byte position 0
+	// U+0069 'i' starts at byte position 1
+    
+	/* EUC-KR 인코딩 */
 	var buf bytes.Buffer
 	w := transform.NewWriter(&buf, korean.EUCKR.NewEncoder())
 	w.Write([]byte(kor))
 	w.Close()
-
 	euckr := buf.String()
-
 	fmt.Printf("[% x]\n", []byte(euckr))
 	// [be c8 b3 e7]
 }
