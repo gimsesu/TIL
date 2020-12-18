@@ -62,15 +62,15 @@ func main() {
 	/* 유니코드 코드 포인트 */
 	for i, runeValue := range kor {
 		fmt.Printf("%#U starts at byte position %d\n", runeValue, i)
-		// U+C548 '안' starts at byte position 0
-		// U+B155 '녕' starts at byte position 3
 	}
+	// U+C548 '안' starts at byte position 0
+	// U+B155 '녕' starts at byte position 3
 
 	for i, runeValue := range eng {
 		fmt.Printf("%#U starts at byte position %d\n", runeValue, i)
-		// U+0048 'H' starts at byte position 0
-		// U+0069 'i' starts at byte position 1
 	}
+	// U+0048 'H' starts at byte position 0
+	// U+0069 'i' starts at byte position 1
     
 	/* EUC-KR 인코딩 */
 	var buf bytes.Buffer
