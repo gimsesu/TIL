@@ -77,9 +77,7 @@ func main() {
 	w := transform.NewWriter(&buf, korean.EUCKR.NewEncoder())
 	w.Write([]byte(kor))
 	w.Close()
-
 	euckr := buf.String()
-
 	fmt.Printf("[% x]\n", []byte(euckr))
 	// [be c8 b3 e7]
 }
