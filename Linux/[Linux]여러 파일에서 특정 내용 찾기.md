@@ -32,6 +32,8 @@ $ find . -name "파일이름" | xargs grep "찾을 문자열"
 
 
 
+</br>
+
 ## 예시
 
 다음과 같이 로그 파일이 있다.
@@ -41,11 +43,7 @@ $ ls ~/logs
 1.log  2.log  3.log
 ```
 
-</br>
-
 ### 🌺`너의 이름은?`을 포함한 내용을 검색
-
-#### 1.
 
 ```shell
 $ find . -type f | xargs grep "너의 이름은?"
@@ -54,8 +52,6 @@ $ find . -type f | xargs grep "너의 이름은?"
 ./2.log:너의 이름은? 고양이
 ```
 
-#### 2.
-
 ```shell
 $ find . -name "*.log" | xargs grep "너의 이름은?"
 ./1.log:너의 이름은? 홀리워터
@@ -63,11 +59,7 @@ $ find . -name "*.log" | xargs grep "너의 이름은?"
 ./2.log:너의 이름은? 고양이
 ```
 
-</br>
-
 ### 🍉`수박`을 포함한 내용을 검색
-
-#### 1.
 
 ```shell
 $ find  . -type f | xargs grep "수박"
@@ -75,8 +67,6 @@ $ find  . -type f | xargs grep "수박"
 ./3.log:과일의 이름은? 수박
 ./2.log:과일의 이름은? 수박
 ```
-
-#### 2.
 
 ```shell
 $ find  . -name "*.log" | xargs grep "수박"
