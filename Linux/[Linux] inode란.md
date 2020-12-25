@@ -19,7 +19,7 @@ $ df -i
 Filesystem       Inodes    IUsed    IFree IUse% Mounted on 
 udev           16488783      470 16488313    1% /dev 
 tmpfs          16491586      580 16491006    1% /run 
-/dev/dm-0      20840448 20840448        0  100% /    // 내가 사용하는 파티션
+/dev/dm-0      20840448 20840448        0  100% /    			# 내가 사용하는 파티션
 none           16491586        2 16491584    1% /sys/fs/cgroup 
 none           16491586        3 16491583    1% /run/lock 
 none           16491586        1 16491585    1% /run/shm 
