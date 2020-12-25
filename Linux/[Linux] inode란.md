@@ -1,9 +1,10 @@
 # [Linux] inode란?
 
 Photorec를 이용해 파일을 복구하고 나니 서버의 inode가 가득 찼다. 분명 서버 디스크 스토리지는 부족하지 않은데, 임시 파일 생성이 되지 않길래 무슨 일이지 하고 있는데 팀장님이 알려 주셨다 ^^;. Phtorec는 텍스트 파일의 경우, 하나의 파일을 이전 형태로 온전히 복구하지 않고 텍스트들이 분리되어 조각조각이 난 파일 모음으로 복구한다. 그래서 매우 많은 수의 파일이 떨어진다.
+
 </br>
 
-에러
+**에러**
 
 ```shell
 $ cd /va-bash: cannot create temp file for here-document: No space left on device
@@ -11,7 +12,7 @@ $ cd /va-bash: cannot create temp file for here-document: No space left on devic
 
 </br>
 
-inode 사용량 조회
+**inode 사용량 조회**
 
 ```shell
 $ df -i 
@@ -92,8 +93,6 @@ Change: 2020-12-24 09:02:29.119373414 +0900
 $ stat --format=%i test
 18613173
 ```
-
-</br>
 
 ### ls
 
