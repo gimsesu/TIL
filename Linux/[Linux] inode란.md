@@ -156,10 +156,7 @@ none              16M     2   16M    1% /run/user
 </br>
 
 ## 📜참고
+
 - [반달가면 : 리눅스에서 디스크 용량이 충분한데 더 이상 쓰기가 안 되는 경우 발생[Website]. (2020.12.25)](http://bahndal.egloos.com/602209)
 - [Detailed Understanding of Linux Inodes with Example[Website]. (2020.12.25)](https://linoxide.com/linux-command/linux-inode)
 - [아이노드 ( i-node ) : 네이버 블로그[Website]. (2020.12.25)](https://m.blog.naver.com/PostView.nhn?blogId=s2kiess&logNo=220124665335&proxyReferer=https:%2F%2Fwww.google.com%2F)
-
-
-
-
