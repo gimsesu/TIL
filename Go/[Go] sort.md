@@ -71,7 +71,7 @@ func main() {
 	sort.Sort(ByAge(people))
 	
 	fmt.Println(people)
-    // 정렬 후 - [두둠칫: 10 김성수: 31 노림수: 80 비피엠: 150]
+	// 정렬 후 - [두둠칫: 10 김성수: 31 노림수: 80 비피엠: 150]
 }
 ```
 
