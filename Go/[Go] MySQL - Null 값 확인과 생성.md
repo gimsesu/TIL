@@ -41,7 +41,7 @@ type NullString struct {
 
 ## NULL 확인하기
 
-DB에서 특정 필드가 `NULL` 값일 경우, 단순 `string` 타입으로 받으면 에러가 난다. `sql.NullString`으로 받은 다음, `NULL `여부를 확인해주어야 한다.
+DB에서 특정 필드가 `NULL` 값일 경우, 단순 `string` 타입으로 받으면 에러가 난다. `sql.NullString`으로 받은 다음, `NULL` 여부를 확인해주어야 한다.
 
 ```go
 query := "SELECT id, fruit, taste FROM fruits"
