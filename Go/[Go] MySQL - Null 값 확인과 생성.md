@@ -16,8 +16,9 @@ Go에서 `NULL` 값은 필드의 타입에 따라 `sql.Null*`과 같은 구조�
 
 </br>
 
-`sql.NullString`을 예로 들어보자. MySQL의 `VARCHAR`나 `TEXT` 타입은 Go에서 `sql.NullString`으로 `NULL` 여부를 확인할 수 있다. 
-`Valid == true` 이면 해당 `String` 값은 `NULL`이 아니다.
+`sql.NullString`을 예로 들어보자. </br>
+MySQL의 `VARCHAR`나 `TEXT` 타입은 Go에서 `sql.NullString`으로 `NULL` 여부를 확인할 수 있다. </br>
+`sql.NullString.Valid == true` 이면 `String` 값은 `NULL`이 아니다.
 
 ```go
 type NullString struct {
