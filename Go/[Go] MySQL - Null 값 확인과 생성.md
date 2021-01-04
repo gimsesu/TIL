@@ -62,12 +62,10 @@ for rows.Next() {
         log.Fatal(err)
     }
     
-    // Null 값을 확인
-    var taste = tasteRaw.String
-    if !tasteRaw.Valid {
-        taste := "맛이없어"
+    taste := tasteRaw.String
+    if !tasteRaw.Valid { // Null일 경우
+        taste = "맛이없어"
     }
-    taste := CheckNullStr(tasteRaw)
     
     fmt.Printf("id:%d, 과일:%s, 맛:%s\n", id, fruit, taste)
     // id:1, 과일:바나나, 맛:달콤
@@ -134,4 +132,6 @@ func NewNullString(s string) sql.NullString {
 	}
 }
 ```
+
+
 
