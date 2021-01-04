@@ -63,7 +63,7 @@ for rows.Next() {
     }
     
     taste := tasteRaw.String
-    if !tasteRaw.Valid { // Null일 경우
+    if !tasteRaw.Valid {	// Null일 경우
         taste = "맛이없어"
     }
     
