@@ -15,6 +15,7 @@ Go에서도 MySQL의 Null 값을 확인하거나 생성할 수 있다.
 Go에서 `NULL` 값은 필드의 타입에 따라 `sql.Null*`과 같은 구조체 타입으로 지원을 한다. `sql.NullString`을 예로 들어보자.
 
 </br>
+
 MySQL의 `VARCHAR`나 `TEXT` 타입은 Go에서 `sql.NullString`으로 `NULL` 여부를 확인할 수 있다.
 
 ```go
