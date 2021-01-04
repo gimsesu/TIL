@@ -108,14 +108,14 @@ if err != nil{
 
 ## 🏄‍♂️편하게 함수화
 
-`NULL` 값을 사용하는 테이블이라면 수시로 사용할 기능이다. 함수로 빼서 코드를 재사용해보자. `NULL` 값을 판단하는 기준값을 직접 지정할 수도 있다.
+`NULL` 값을 사용하는 테이블이라면 수시로 사용할 기능이다. 함수로 빼서 코드를 재사용해보자. `NULL`을 판단하는 기준값을 직접 지정할 수도 있다.
 
 ### 1) NULL 확인
 
 ```go
 func CheckNullStr(s sql.NullString) string {
 	if !s.Valid {
-		return ""
+		return ""	// 기준값
 	}
 	return s.String
 }	
@@ -125,7 +125,7 @@ func CheckNullStr(s sql.NullString) string {
 
 ```go
 func NewNullString(s string) sql.NullString {
-	if s == "" {
+	if s == "" {	// 기준값
 		return sql.NullString{}
 	}
 	return sql.NullString{
