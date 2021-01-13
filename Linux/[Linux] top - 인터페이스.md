@@ -70,6 +70,10 @@ Threads: 1512 total,   2 running, 1510 sleeping,   0 stopped,   0 zombie
 
 #### $ Line 1
 
+```shell
+Tasks: 411 total,   1 running, 410 sleeping,   0 stopped,   0 zombie 
+```
+
 | 항목     | 내용                                                         |
 | -------- | ------------------------------------------------------------ |
 | Tasks    | 프로세스 또는 스레드의 총 개수를 표시한다. 이 수치는 아래의 항목으로 다시 분류된다. |
@@ -84,7 +88,11 @@ Threads: 1512 total,   2 running, 1510 sleeping,   0 stopped,   0 zombie
 
 #### $ Line 2
 
-마지막 새로 고침 이후 간격을 기반으로 CPI 상태를 백분율로 보여준다.</br>
+```shell
+%Cpu(s): 34.3 us,  0.8 sy,  0.0 ni, 64.0 id,  0.7 wa,  0.0 hi,  0.1 si,  0.0 st
+```
+
+마지막 새로 고침 이후 간격을 기반으로 CPU 상태를 백분율로 보여준다.</br>
 
 기본적으로 개별 범주에 대한 백분율이 표시된다. 두 개의 레이블이 있는 경우, 최신 커널 버전은 전자로 표시된다.
 
