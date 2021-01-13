@@ -27,7 +27,7 @@ $ top
 
 top에는 다양한 사용자 정의 방법과 기능들이 존재하지만, 이 글에서는 top을 실행시켰을 때 나타나는 기본 인터페이스의 요소에 대해서만 살펴본다.
 
-![top 인터페이스](![top_1](https://user-images.githubusercontent.com/51101183/104422201-c65c8a00-55bf-11eb-9e7f-e18d0ee059d1.png))
+![top_1](https://user-images.githubusercontent.com/51101183/104422201-c65c8a00-55bf-11eb-9e7f-e18d0ee059d1.png)
 
 
 
